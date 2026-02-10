@@ -253,7 +253,7 @@ section Subformulae
       | And e₁' e₂' ih₁ ih₂ =>
         cases e₂_sf_e₁ with
         | SF_Self => assumption
-        | SF_And_left  a => apply SF_And_left ; apply ih₁ ahttps://metarocq.github.io/https://metarocq.github.io/
+        | SF_And_left  a => apply SF_And_left ; apply ih₁ a
         | SF_And_right a => apply SF_And_right; apply ih₂ a
       | Or e₁' e₂' ih₁ ih₂ =>
         cases e₂_sf_e₁ with
